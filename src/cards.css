@@ -5,7 +5,10 @@ html {
     height: 100%;
     background-color: #FFFFFF;
 }
-
+body{
+  display:flex;
+  justify-content: center;
+}
 .icon {color: #BCD2DA;}
 
 .card {
@@ -47,13 +50,13 @@ html {
 
 .cardGroup {
     /* display */
-  
+    width: 710px;
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
     display:flex;
+    justify-content: center;
     
-
   }
   
     .cardGroup__card {
@@ -85,4 +88,9 @@ html {
         }
       
       }
-    }  
+    }
+    @media (max-width: 320px){
+      .cardGroup{
+        flex-direction: column;
+      }
+    }
